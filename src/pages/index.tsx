@@ -32,13 +32,13 @@ const Card = () => {
   };
   const [advice, setAdvice] = useState<SlipType | null>(null);
   return (
-    <div className="min-w-[250px] max-w-[600px] min-h-[300px] text-center bg-dark-grayish rounded-md shadow-2xl p-6 box-border">
+    <div className="min-w-[250px] max-w-[600px] min-h-[300px] text-center bg-dark-grayish rounded-md shadow-xl p-6 box-border">
       <div className="w-full h-full">
         <p className="text-neon-green uppercase tracking-[5px] text-[10px]">
           {" "}
           advice #{advice?.id}{" "}
         </p>
-        <p className="text-white my-3 min-h-[200px]">"{advice?.advice}"</p>
+        <p className="text-white my-3 min-h-[200px]"> &quot; {advice?.advice} &quot; </p>
       </div>
       <div className="relative">
         <div className="w-full h-[10px] relative my-4">
